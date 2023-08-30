@@ -1,0 +1,14 @@
+---
+import CardList from "../components/CardList/CardList";
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Seminario">
+	<Navbar title="Celtiberian" />
+	<main>
+		<CardList client:load />
+	</main>
+</Layout>
+
+<style></style>

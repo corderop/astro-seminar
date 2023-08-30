@@ -1,0 +1,10 @@
+.card {
+    background-color: transparent;
+    color: inherit;
+    text-align: inherit;
+    font: inherit;
+    max-width: 400px;
+    border: 1px solid #5e5e5e;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,55 @@
+---
+import UserIcon from "./UserIcon.astro";
+import UserMenu from "./UserMenu.astro";
+
+interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<nav>
+    <div class="side">
+        <UserMenu size="24" />
+    </div>
+    <h1>{title}</h1>
+    <div id="user-icon" class="side right-side">
+        <UserIcon size="24" />
+    </div>
+</nav>
+
+<script>
+    import { USER_MESSAGE } from "../consts";
+
+    const userIcon = document.getElementById("user-icon");
+
+    userIcon.addEventListener("click", () => {
+        console.log(USER_MESSAGE);
+    });
+</script>
+
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    nav h1 {
+        flex-shrink: 1;
+        flex-grow: 0;
+    }
+
+    nav .side {
+        width: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        display: flex;
+    }
+
+    .right-side {
+        justify-content: flex-end;
+    }
+</style>
