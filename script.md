@@ -87,10 +87,10 @@
         pnpm create astro@latest
         ```
 
-
 # 8. View transitions
 
     - Show examples
+    - https://astro-records.pages.dev/
 
 # 9. Novedades Astro v3
     - https://astro.build/blog/astro-3/
